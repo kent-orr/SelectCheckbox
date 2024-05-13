@@ -123,8 +123,3 @@ class SelectCheckbox {
   }
 
 }
-
-document.addEventListener("DOMContentLoaded", function() {
-  new SelectCheckbox('mySelect');
-});
-
