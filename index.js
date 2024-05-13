@@ -41,7 +41,8 @@ class SelectCheckbox {
     const menu = document.createElement('div');
     menu.className = 'dropdown-menu';
     menu.style.userSelect = 'none';
-    // menu.style.width = '100%';
+    menu.style.maxHeight = '300px'; // Example max-height, adjust as needed
+    menu.style.overflowY = 'auto';
 
     // ================================ SEARCH =================================
     const searchInput = document.createElement('input');
