@@ -1,8 +1,13 @@
-console.log('hello world');
+
+function initializeSelectCheckbox() {
+  document.querySelectorAll('select[multiple]').forEach((select) => {
+    new SelectCheckbox(select);
+  });
+}
 
 class SelectCheckbox {
-  constructor(selectId) {
-    this.select = document.getElementById(selectId);
+  constructor(selectElement) {
+    this.select = selectElement;
     if (!this.select) {
       throw new Error('Select element not found');
     }
